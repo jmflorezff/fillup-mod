@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="250dp" 
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+        
+    <LinearLayout 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical"
+	    android:paddingLeft="8dip" 
+	    android:paddingRight="8dip"
+	    android:paddingBottom="8dip">
+	    
+	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_name_label" 
+            />
+
+        <EditText
+            android:id="@+id/textVehicleName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:maxLength="20"
+            />
+        
+   	    <TextView
+   	        android:id="@+id/labelVehicleTankSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_tanksize_label" 
+            />
+
+        <EditText
+            android:id="@+id/textVehicleTankSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_brand_label"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVehicleBrand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_plate_label"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVehiclePlate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_type_label"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVehicleType"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal"
+	    android:background="@color/dialog_buttonbar_bg"
+	    android:padding="5dip"
+	    >
+	    
+        <Button 
+            android:id="@+id/buttonOK" 
+            android:layout_width="120dp" 
+            android:layout_height="wrap_content" 
+            android:text="@string/ok_label" 
+            />
+        
+        <Button 
+            android:id="@+id/buttonCancel" 
+            android:layout_width="120dp" 
+            android:layout_height="wrap_content" 
+            android:text="@string/cancel_label" 
+            />
+                
+    </LinearLayout> 
+
+</LinearLayout><!-- From: file:/home/juan/Projects/FillUp/FillUp/src/main/res/layout/dialog_vehicle.xml -->
